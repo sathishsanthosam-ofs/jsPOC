@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet/index.css">
+		<script src="script/feed.js"></script>
+		<script src="script/profile.js"></script>
+		<script src="script/index.js"></script>		
+		
+	</head>
+	<body>
+		<div id ="LoginPage">	
+			<div class = "header">
+				<div class ="header1">
+					<h2>MY BOOK</h2>
+				</div>
+				<div class ="header2">								
+				</div>
+				<div class ="header3">
+					<input id = "1" type="text" name="userName" placeholder="User Name">
+					<input id = "2" type="password" name="password" placeholder="Pass word">				
+					<input type="button" name="signIn"  value="Sign In" onclick="login(1, 2)">	
+				</div>			
+			</div>		
+			<image src="images/london-literature-festival.jpg">		
+			<div class = "footer">
+				Talent Improving exercise, OFS
+			</div>	
+		</div>
+		<div id ="FeedPage">
+			<div class = "header">
+				<div class ="header1">
+					<h2>MY BOOK</h2>
+				</div>
+				<div class ="header2">
+					<div class = "header4">
+						User Name :  <a id = "feeduserName"></a>
+					</div>
+					<div class = "header5">
+						<input type="button" name="signOut"  value="Sign Out" align = "right" onClick="setCurrentpage('LoginPage')">	
+					</div>
+					
+				</div>						
+			</div>
+			<div class = "feedPage">
+				<div class = "nav">
+					<input type="button" name="feed"  value="Feed  " onclick="setCurrentpage('FeedPage')">
+					<input type="button" name="profile"  value="Profile" onclick="setCurrentpage('ProfilePage')">
+				</div>
+				<div class="feedPost">
+					<input id = "feedText"type="text" name="f"  placeholder="Text feed or URL feed" style="width:750px;" align = "center">
+					<input type="button" name="p"  value="Post" onclick="createFeeds('feedText')">
+					<div id="loadFeeds" class = "feedlist">												
+					</div>
+				</div>								
+			</div>			
+			<div class = "footer">
+				Talent Improving exercise, OFS
+			</div>	
+		</div>
+		<div id ="ProfilePage">	
+			<div class = "header">
+				<div class ="header1">
+					<h2>MY BOOK</h2>
+				</div>
+				<div class ="header2">
+					<div class = "header4">
+						User Name :  <a id = "profileuserName"></a>
+					</div>
+					<div class = "header5">
+						<input type="button" name="signOut"  value="Sign Out" align = "right" onClick="setCurrentpage('LoginPage')">	
+					</div>
+					
+				</div>						
+			</div>
+			<div class = "feedPage">
+				<div class = "nav">
+					<input type="button" name="feed"  value="Feed  " onclick="setCurrentpage('FeedPage')">
+					<input type="button" name="profile"  value="Profile" onclick="setCurrentpage('ProfilePage')">
+				</div>
+				<div class="feedPost">
+				<table>
+					<tr>
+						<td><div class = "userIcon"></div></td>
+						<td>
+							<table>
+								<tr><td>*<input id = "Profilename" type="text" name="f"  placeholder="Name" align = "center"></td></tr>
+								<tr><td>*<input id = "age" type="text" name="f"  placeholder="Age" align = "center" onkeypress='validateNumber(event)'></td><tr>
+								<tr><td>*<input id = "phone" type="text" name="f"  placeholder="Phone" align = "center" onkeypress='validateNumber(event)'></td><tr>
+								<tr><td>*<input id = "email" type="text" name="f"  placeholder="Email" align = "center"></td><tr>
+								<tr><td><textarea id = "address" rows="4" placeholder="Address"></textarea></td><tr>
+								<tr><td><input id = "fileName" type="text" name="f"  placeholder="Profile Image" align = "center"></td>
+								<td><input type="file" name="p"  value="Select" id="profileImage" style="display: none;"  onchange="handleFiles();">
+									<input type="button" value="Browse..." onclick="document.getElementById('profileImage').click();" />
+								</td></tr>								
+
+								<tr></tr><tr></tr>
+								<tr><td></td><td><input type="button" name="p"  value="Save" onclick="saveProfile();"></td></tr>
+							
+							</table>
+						</td>
+						<td>
+							<img id="preview" src="" width="152px" height="229px"></img>
+						</td>
+						<td> <td><div class = "userIcon"></div></td></td>
+					</tr>
+				</table>
+					
+					<div id="loadFeeds" class = "feedlist">												
+					</div>
+				</div>								
+			</div>			
+			<div class = "footer">
+				Talent Improving exercise, OFS
+			</div>
+		</div>
+		<script>
+			setCurrentpage("LoginPage");
+		</script>
+	</body>
+	
+</html>

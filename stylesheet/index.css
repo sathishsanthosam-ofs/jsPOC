@@ -1,0 +1,118 @@
+.header {
+	background-color:green;				
+	height:60px;
+	width:1000px;
+}
+.header1 {				
+	text-align:center;			
+	height:60px;
+	width:320px;
+	float:left;				
+}
+.header2 {				
+	text-align:center;			
+	height:20px;
+	width:680px;
+	float:right;
+	align:right;	
+}
+.header3 {				
+	text-align:center;			
+	height:40px;
+	width:680px;
+	float:right;							
+}
+.header4 {				
+	text-align:center;			
+	height:20px;
+	width:600px;
+	float:left;		
+}
+.header5{				
+	text-align:center;			
+	height:20px;
+	width:80px;
+	float:left;		
+}
+.footer {
+	text-align:center;	
+	background-color:green;				
+	height:20px;
+	width:1000px;
+}
+.feedPage{
+	width:1000px;
+	height:400px;	
+}
+.nav {			
+	width:100px;
+	height:400px;
+	background-color:yellow;
+	float:left;	
+}
+.feedPost{
+	text-align:center;	
+	width:900px;
+	height:400px;
+	background-color:grey;
+	float:right;	
+}
+.feedlist{
+	text-align:center;	
+	width:900px;
+	height:60px;
+	background-color:grey;
+	float:left;		
+}
+.UserIcon{
+	text-align:center;	
+	width:50px;
+	height:60px;
+	background-color:grey;
+	float:left;	
+}
+.UserFeed{
+	text-align:left;	
+	width:660px;
+	height:60px;
+	background-color:grey;
+	float:left;	
+}
+.UserFeedText{
+	text-align:left;	
+	width:600px;
+	height:30px;
+	background-color:grey;
+	float:left;	
+}
+.UserFeedDelete{
+	text-align:right;	
+	width:60px;
+	height:30px;
+	background-color:grey;
+	float:left;	
+}
+.UserFeedDate{
+	text-align:right;	
+	width:660px;
+	height:30px;
+	background-color:grey;
+	float:left;	
+}
+.emptyColumn{
+	text-align:right;	
+	width:10px;
+	height:60px;
+	background-color:grey;
+	float:left;	
+}
+
+.emptyRow{
+	text-align:right;	
+	width:900px;
+	height:10px;
+	background-color:grey;
+	float:left;	
+}
+
+
