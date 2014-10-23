@@ -39,11 +39,7 @@ function service(currentUser,type){
 		};
 	} else if (type === "DeleteFeed"){
 			ret =  function(id){
-			feeds.splice(id,1);	
-			var myNode = document.getElementById("loadFeeds");
-			while (myNode.firstChild) {
-				myNode.removeChild(myNode.firstChild);
-			}			
+			feeds.splice(id,1);						
 			reloadFeeds();
 		};
 	} else {
