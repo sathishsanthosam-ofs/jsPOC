@@ -1,6 +1,7 @@
 function Feed(id,type){
 	this.id=id;;
-	this.type=type;	
+	this.type=type;
+	this.time= new Date();	
 }
 Feed.prototype.getID = function(){
 	return this.id;
@@ -10,17 +11,16 @@ Feed.prototype.getType = function(){
 };
 
 function TextFeed(id,text){
-	this.id = id;
-	this.text = text;
-	this.time= new Date();
+	Feed.call(this,id,"text");
+	this.text = text;	
 }
 TextFeed.prototype = Object.create(Feed.prototype);
 TextFeed.prototype.getFeed = function(){
 	return this.text;
 }
 function URLFeed(id,url){
-	this.url=url;
-	this.time= new Date();
+	Feed.call(this,id,"URL");
+	this.url=url;	
 }
 URLFeed.prototype = Object.create(Feed.prototype);
 URLFeed.prototype.getFeed = function(){
@@ -77,8 +77,8 @@ function reloadFeeds(){
 		userFeedDelete = getElement("div","UserFeedDelete");
 		userFeedDate = getElement("div","UserFeedDate");	
 		node = document.createElement("a");
-		if(feeds[i] instanceof URLFeed){
-			node.setAttribute("href", "Http://google.com");		
+		if(feeds[i].getType() === "URL"){
+			node.setAttribute("href", feeds[i].getFeed());		
 		}
 		node.innerHTML=feeds[i].getFeed();
 		userFeedText.appendChild(node);
