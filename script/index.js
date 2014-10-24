@@ -1,11 +1,12 @@
+"use strict";
 function LoginCredentials(){
 	this.sathish="kumar";
-	this.test="123456"	
+	this.test="123456";	
 };
 function MyBook(){	
 	this.myCredentials = new LoginCredentials();
 	this.users = [];
-	for(key in this.myCredentials)
+	for(var key in this.myCredentials)
 	{
 		this.users.push(new User(key));
 	}		

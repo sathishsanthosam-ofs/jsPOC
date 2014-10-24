@@ -1,5 +1,6 @@
+"use strict";
 function Feed(id,type){
-	this.id=id;;
+	this.id=id;
 	this.type=type;
 	this.time= new Date();	
 }

@@ -1,3 +1,4 @@
+"use strict";
 function Profile(userName){
 	this.userName=userName;	
 	this.profileImage = "images/user.jpg";
