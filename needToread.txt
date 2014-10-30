@@ -1,0 +1,11 @@
+Understanding Scops : https://github.com/angular/angular.js/wiki/Understanding-Scopes
+Writing Directivies : https://www.youtube.com/watch?v=WqmeI5fZcho
+Isolate Scop with & : https://egghead.io/lessons/angularjs-understanding-isolate-scope
+Isolate Scope with @ : https://egghead.io/lessons/angularjs-isolate-scope-attribute-binding
+Isolate Scope with = : https://egghead.io/lessons/angularjs-isolate-scope-two-way-binding
+Directives Explained : PDF
+Directive to Directive Communication : https://thinkster.io/egghead/directive-to-directive-communication/
+ng route : https://www.youtube.com/watch?v=5uhZCc0j9RY
+HangBang Model Vs html 5 -- https://www.youtube.com/watch?v=uYGzj7BTT2c
+$rout Provider : https://docs.angularjs.org/api/ngRoute/provider/$routeProvider
+UI-router Vs ng-router : http://stackoverflow.com/questions/21023763/difference-between-angular-route-and-angular-ui-router
